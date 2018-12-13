@@ -13,7 +13,7 @@ public:
     Port(const Port& p);
     virtual ~Port();
 
-    virtual Port& operator= (const Port & p);
+    Port& operator= (const Port & p);
     Port& operator+= (int b) ; // adds b to bottles
     Port& operator-= (int b); // subtracts b from bottles, if possible
 

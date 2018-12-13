@@ -12,7 +12,7 @@ public:
     VintagePort(const VintagePort& vp);
     ~VintagePort();
 
-    virtual VintagePort & operator=(const VintagePort & vp);
+    VintagePort & operator=(const VintagePort & vp);
     void Show() const;
     friend std::ostream& operator<<(std::ostream& os, const VintagePort& vp);
 };
