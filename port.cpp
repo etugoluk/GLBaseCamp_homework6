@@ -1,4 +1,5 @@
 #include "port.h"
+#include <cstring>
 
 Port::Port(const char* br, const char* st, int b) : bottles(b)
 {
@@ -8,7 +9,7 @@ Port::Port(const char* br, const char* st, int b) : bottles(b)
 		strcpy(brand, br);
 	}
 	else
-		brand = "none";
+	  brand = (char*)"none";
 
 	if (st)
 	{

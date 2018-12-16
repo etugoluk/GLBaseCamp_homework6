@@ -1,4 +1,5 @@
 #include "vintage_port.h"
+#include <cstring>
 
 VintagePort::VintagePort() : Port("none", "vintage", 0), nickname(strcpy(new char[6], "noname")), year(0) {} 
 
@@ -10,7 +11,7 @@ VintagePort::VintagePort(const char* br, int b, const char* nn, int y) : Port(br
 		strcpy(nickname, nn);
 	}
 	else
-		nickname = "none";
+	  nickname = (char*)"none";
 } 
 
 
